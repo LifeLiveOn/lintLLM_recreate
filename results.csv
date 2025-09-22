@@ -1,0 +1,91 @@
+Level,File_Name,Defect_Line,Defect_Type,Defect_Description
+simple,simple_1.v,8,SYNTAX_STRUCTURE,Incorrect use of assignment operator (==) instead of (=) in the assign statement.
+simple,simple_2.v,6,SYNTAX_STRUCTURE,Incorrect use of the ternary operator (‘？’).
+simple,simple_3.v,4-10,SIGNAL_USAGE,[Undefined signal 'temp' is used in assignment to 'data_out'.
+simple,simple_4.v,N/A,ERROR,"Network request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)"
+simple,simple_5.v,12,SYNTAX_STRUCTURE,Missing semicolon after assign statement.
+simple,simple_6.v,12-13-10,SYNTAX_STRUCTURE,"Extra 'endif' statement is present, which is not valid Verilog syntax."
+simple,simple_7.v,8-9-20,SYNTAX_STRUCTURE,[Assignment to a variable (enable) outside of an always block is not allowed in Verilog.
+simple,simple_8.v,7-9-10-15-20-25-30-36,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect.
+simple,simple_9.v,9-19,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect for combinational logic.
+simple,simple_10.v,6-7-10-11,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect.
+simple,simple_11.v,4-5-6-8,LOGIC_SYNTHESIS,"[Invalid assignment in combinational logic using '+', which is not allowed in Verilog for reg typ..."
+simple,simple_12.v,7-13,SENSITIVITY_LIST,Sensitivity list in the always block is incorrect.
+simple,simple_13.v,10-11-22,SENSITIVITY_LIST,"Sensitivity list in the always block is incorrectly formatted, missing parentheses and using incorrect syntax."
+simple,simple_14.v,6,BIT_WIDTH_USAGE,"Bit width mismatch in assignment: `a` and `b` are 5 bits, but `sum` is only 4 bits, leading to overflow."
+simple,simple_15.v,7-8,SYNTAX_STRUCTURE,Incorrect use of Verilog primitive gates with output port.
+simple,simple_16.v,9-10-16-17,SENSITIVITY_LIST,The sensitivity list in the always block is incomplete and incorrect.
+simple,simple_17.v,5-6-10,SYNTAX_STRUCTURE,Multiple assignments to the same output signal `common_bus` in combinatorial logic.
+simple,simple_18.v,8-12-13-14,SYNTAX_STRUCTURE,[Incorrect assignment operator (=) used in temporal logic instead of non-blocking assignment (<=)]
+simple,simple_19.v,10-12,SYNTAX_STRUCTURE,Missing 'begin' before the 'else' block in the 'always' block.
+simple,simple_20.v,5-6-10-11,SYNTAX_STRUCTURE,[Module header line 5 has a syntax error: variable declaration outside the module header is not allowed.
+simple,simple_21.v,7-8,SYNTAX_STRUCTURE,[Invalid use of primitive gate (and) without proper net declaration and connection]
+simple,simple_22.v,20-21-59-60,SYNTAX_STRUCTURE,"The 'always' block for combinational logic is missing a sensitivity list, and the block is incorrectly written as 'always @()'."
+simple,simple_23.v,5-11,COMBINATIONAL_SEQUENTIAL,[Mixing sequential and combinational logic in the same always block]
+simple,simple_24.v,8-10,COMBINATIONAL_SEQUENTIAL,[Mixing combinational and sequential logic incorrectly in the always block]
+simple,simple_25.v,12-13-19-33-40-47-50-53-54-55-56-57,SENSITIVITY_LIST,"The sensitivity list in the first `always` block includes `state`, which is a `reg` variable."
+simple,simple_26.v,5-10,SENSITIVITY_LIST,Missing 'clk' signal in sensitivity list of 'always' block
+simple,simple_27.v,10-14,COMBINATIONAL_SEQUENTIAL,Mixing combinational and sequential logic incorrectly.
+simple,simple_28.v,8-12,SENSITIVITY_LIST,The sensitivity list in the 'always' block is incomplete.
+simple,simple_29.v,6-10,SYNTAX_STRUCTURE,"Sensitivity list is incorrectly written as ""edge clk"" instead of ""posedge clk"" or ""negedge clk""."
+simple,simple_30.v,6,SYNTAX_STRUCTURE,[Invalid assignment to output reg using a combinatorial logic statement outside an always block]
+medium,medium_1.v,3-4-11,SYNTAX_STRUCTURE,Duplicate signal declaration in module header.
+medium,medium_2.v,8-10-11,SYNTAX_STRUCTURE,"[Incorrect assignment in reset condition, using 7'b0 instead of 8'b0 for data_out]"
+medium,medium_3.v,17-25-45-47-48-50-51-52-53-54-21,SYNTAX_STRUCTURE,Duplicate instantiation of module `lookup m4` on line 21.
+medium,medium_4.v,17-18-22-36-37-38-40,LOGIC_SYNTHESIS,Incorrect logic in the always block for yout_r assignment.
+medium,medium_5.v,8-9-10-14-15-16-17-18-20,SENSITIVITY_LIST,The sensitivity list in the 'always' block is incomplete and incorrect.
+medium,medium_6.v,4-5-8-11-12,PORT_TYPE,Output port is declared as 'reg' which is incorrect.
+medium,medium_7.v,7-10-15-16,SYNTAX_STRUCTURE,[Incorrect use of 7'd0; should be 8'd0 to match the 8-bit width of internal_reg.
+medium,medium_8.v,9-10-15-16,SENSITIVITY_LIST,The sensitivity list in the 'always' block is incorrect for combinational logic.
+medium,medium_9.v,7-16,MODULE_INSTANCES,Incorrect module instantiation with floating port `tmp` and missing connection.
+medium,medium_10.v,10-11-14-16,LOGIC_SYNTHESIS,"The reset signal is not properly synchronized, leading to potential synthesis issues."
+medium,medium_11.v,7-13,MODULE_INSTANCES,"Module instantiation uses positional connection, but should use named connection for clarity and correctness."
+medium,medium_12.v,N/A,ERROR,"Network request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)"
+medium,medium_13.v,6-10,SYNTAX_STRUCTURE,"Missing 'begin-end' block for the 'always' block, which violates Verilog syntax rules."
+medium,medium_14.v,6,BIT_WIDTH_USAGE,Bit width mismatch in assignment.
+medium,medium_15.v,16,UNKNOWN,Use of 'ZZ' (highly resistive state) is not allowed in variable assignments.
+medium,medium_16.v,7-13,SENSITIVITY_LIST,"The sensitivity list in the always block uses logical OR (`||`), which is incorrect for combinatorial logic."
+medium,medium_17.v,5-6,SYNTAX_STRUCTURE,[Invalid syntax in the 'and' statement; missing operands and incorrect usage]
+medium,medium_18.v,2-3-14-15-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect.
+medium,medium_19.v,2-8,SYNTAX_STRUCTURE,Missing comma after the last port declaration in the module header.
+medium,medium_20.v,7-11,SENSITIVITY_LIST,Sensitivity list in the always block is incorrect; it uses a logical OR (`|`) instead of proper edge-sensitive signals or `*` for combinatorial logic.
+medium,medium_21.v,1-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-52-53-54-55-56-57-58-59-60-61-62-63-64-65-66-67-68-69-70-71-72-73-74-75-76-77-78-79-80-81-82-83-84-85-86-87-88-89-90-91-92-93-94-95-96-97-98-99-100,SYNTAX_STRUCTURE,"[Module declaration is missing, code is not wrapped in 'module-endmodule'."
+medium,medium_22.v,N/A,ERROR,"Network request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)"
+medium,medium_23.v,8,BIT_WIDTH_USAGE,Bit width mismatch in assignment.
+medium,medium_24.v,4-7,BIT_WIDTH_USAGE,Incorrect bit-width usage for variable 'even_bit' and improper assignment.
+medium,medium_25.v,4-5-14-16,PORT_TYPE,Extra output port 'tmp' declared in module 'calculate' without being used in the top module 'medium_25'.
+medium,medium_26.v,8-16,SENSITIVITY_LIST,The 'always' block does not have a complete sensitivity list.
+medium,medium_27.v,8-10-11,SYNTAX_STRUCTURE,[Incorrect assignment in temporal logic; blocking assignment (=) is used instead of non-blocking ...
+medium,medium_28.v,2-10,PORT_TYPE,"Output port 'b' is declared as a 'reg', which is incorrect for an output port."
+medium,medium_29.v,10-11-12-15,BIT_WIDTH_USAGE,[Incorrect bit-width declaration in assignment]
+medium,medium_30.v,4-5-7-10-11,SYNTAX_STRUCTURE,[Missing semicolon after 'output reg [3:0] count']
+complex,complex_1.v,7-10,SENSITIVITY_LIST,The sensitivity list in the 'always' block is incorrect.
+complex,complex_2.v,7-13,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect for combinational logic.
+complex,complex_3.v,7-10,SENSITIVITY_LIST,"The sensitivity list in the 'always' block is missing signals, and the signals used in the assignment are not included in the sensitivity list."
+complex,complex_4.v,14-15-17-18-19-20-21-22-23-24-25-26-27-28-29,SENSITIVITY_LIST,The sensitivity list in the always block is incomplete and incorrectly defined for a combinational logic block.
+complex,complex_5.v,10-11-12-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35,BIT_WIDTH_USAGE,Bit width mismatch in shift operation.
+complex,complex_6.v,10-17,LOGIC_SYNTHESIS,"Output q is assigned from ram[address] on every positive edge of outclock, but address is not guaranteed to be stable during this assignment, leading to potential synthesis and simulation issues."
+complex,complex_7.v,8-9-10,BIT_WIDTH_USAGE,"Bit width for tri_inout is not explicitly defined, and the assignment may not match the expected width."
+complex,complex_8.v,12-14,COMBINATIONAL_SEQUENTIAL,Combinational and sequential logic are mixed incorrectly in the same module.
+complex,complex_9.v,5-6-9-10-15,SYNTAX_STRUCTURE,"[Output port declared as reg, which is invalid in combinational logic]"
+complex,complex_10.v,11-12-16-21-23-24,SENSITIVITY_LIST,The 'always' block's sensitivity list is incomplete.
+complex,complex_11.v,2-4-11,PORT_TYPE,Output port 'q' is declared as a reg but should be a wire if not used in sequential logic.
+complex,complex_12.v,6,OPERATORS,Logical operator '&&' used for multi-bit variables.
+complex,complex_13.v,6,UNKNOWN,The comparison operator (>) is used on multi-bit variables without proper bit-width handling.
+complex,complex_14.v,6-7-13,UNKNOWN,Bit width mismatch in assignment between in1 (4 bits) and in2 (2 bits) to out (8 bits).
+complex,complex_15.v,9-16,SENSITIVITY_LIST,The sensitivity list in the always block is incorrect for combinational logic.
+complex,complex_16.v,4-5-7-9-10-11-12,BIT_WIDTH_USAGE,Output reg y is assigned in a sequential logic block but is not properly declared with bit width.
+complex,complex_17.v,10-11-12-13-14-15-16-17-18-19,SENSITIVITY_LIST,The sensitivity list in the `always` block is incorrect for combinatorial logic.
+complex,complex_18.v,5-13,LOGIC_SYNTHESIS,"[In the 'always' block, the variable 'data' is being read and written in the same block, leading to a race condition and synthesis issues."
+complex,complex_19.v,2-10,SENSITIVITY_LIST,The sensitivity list in the always block is incomplete and incorrect.
+complex,complex_20.v,8,UNKNOWN,Bit width mismatch in assignment.
+complex,complex_21.v,2-10,SENSITIVITY_LIST,Sensitive list in the 'always' block is incorrect; it should include 'posedge' or 'negedge' for temporal logic.
+complex,complex_22.v,11-12-13,RACE_HAZARD,"Counter is updated after y is assigned, potentially causing a race condition."
+complex,complex_23.v,3-4-7-9-10,BIT_WIDTH_USAGE,"[Bit width for 'data_in' is not properly declared, and the default bit width is not explicitly defined."
+complex,complex_24.v,N/A,ERROR,"Network request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)"
+complex,complex_25.v,7-24,SENSITIVITY_LIST,The sensitivity list in the 'always' block is incomplete and missing necessary signals.
+complex,complex_26.v,10-11-16-17-14-20,COMBINATIONAL_SEQUENTIAL,Mixing combinational and sequential logic incorrectly.
+complex,complex_27.v,7-20,SENSITIVITY_LIST,Two always blocks with conflicting sensitivity lists and race condition.
+complex,complex_28.v,19-20-24-27-29-30-34-35-36,BIT_WIDTH_USAGE,Bit width mismatch in addition operation.
+complex,complex_29.v,11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-52-53-54-55-56-57-58-59-60,LOGIC_SYNTHESIS,"[Invalid logic in 'always' block: 'valid_out' is assigned based on 'end_cnt', but 'end_cnt' is derived from 'ready_add' and 'count', which may not properly synchronize with clock edges, leading to potential synthesis issues."
+complex,complex_30.v,2-3-6-16-17-19-20-21-22-23-24-26-27-28-29-30-31-32-33-35-36-41,SYNTAX_STRUCTURE,[Assignment to output port 'y' in line 16 is invalid as 'y' is declared as an output and should not be assigned within the module.
